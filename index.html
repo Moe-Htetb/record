@@ -254,6 +254,14 @@
         <p>University of Computer Studies (Hpa-an)</p>
       </div>
     </div>
-    <script src="src/main.js"></script>
+    <script>
+      const printbtn = document.querySelector("#printbtn");
+
+      const printHandler = () => {
+        window.print();
+        //   console.log("hi");
+      };
+      printbtn.addEventListener("click", printHandler);
+    </script>
   </body>
 </html>
