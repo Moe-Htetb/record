@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media print {
+  body {
+    zoom: 90%; /* Adjust percentage as needed */
+  }
+
+  .min-h-screen {
+    min-height: auto;
+  }
+
+  .print-hidden {
+    display: none !important; /* Hides unnecessary elements when printing */
+  }
+
+  table {
+    font-size: 12px; /* Reduce font size for table */
+  }
+}
